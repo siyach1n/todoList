@@ -8,16 +8,24 @@
 
 //delete elements
 
-function deleteTodo(index){
-    const elements = document.getElementById("todo-"+index);
-    const parentElement= document.getElementById("todoParent")
-    parentElement.removeChild(elements)
-}
+// function deleteTodo(index){
+//     const elements = document.getElementById("todo-"+index);
+//     const parentElement= document.getElementById("todoParent")
+//     parentElement.removeChild(elements)
+// }
 
 //adding elements
 
-const divEL = document.createElement("div");
-divEL.innerHTML="hi there"
-const parentEl= document.querySelector("body");
-parentEl.appendChild(divEL)
+// const divEL = document.createElement("div");
+// divEL.innerHTML="hi there"
+// const parentEl= document.querySelector("body");
+// parentEl.appendChild(divEL)
 
+
+
+function addTodo(){
+    const getValueInput= document.querySelector("input");
+    const inputVAlue=getValueInput.value
+    return inputVAlue;
+
+}
