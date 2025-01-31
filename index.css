@@ -13,7 +13,7 @@
 
 body{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     background-color: gray;
 }
@@ -22,10 +22,35 @@ body{
     justify-content: center;
 }
 .container{
-   background-color: aqua;
 }
 
 .tododiv{
     display: flex;
     justify-content: center;
 }
+
+[id*="todo-"]{
+    display:flex;
+   justify-content: center;
+   margin-top: 8px;
+}
+
+.todolist{
+    margin-top: 8px;
+   
+}
+
+.btn-delTodo{
+    padding: 10px;
+    margin: 0 0px 0px 8px;
+    background-color: skyblue;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.todo-box{
+    border-radius: 5px;
+    border-style: none;
+    width: 400px;
+}
+

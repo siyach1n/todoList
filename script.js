@@ -39,7 +39,7 @@ function addTodo(){
     newDivEL.setAttribute("id","todo-"+ctr)
 
     newDivEL.innerHTML="<div>"+inputValue +'</div> <button onclick="deleteTodo('+ ctr +')">delete</button>';
-    const parentEl=document.querySelector(".tododiv");
+    const parentEl=document.querySelector(".todolist");
     parentEl.appendChild(newDivEL);
       ctr = ctr +1
     
