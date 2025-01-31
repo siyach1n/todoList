@@ -21,11 +21,26 @@
 // const parentEl= document.querySelector("body");
 // parentEl.appendChild(divEL)
 
+let ctr = 1;
+function deleteTodo(index){
+    // console.log('delete todo called'); 
+    // const element =document.getElementById(index);
+    // element.parentNode.removeChild(element)
 
-
+    const elements = document.getElementById("todo-"+index);
+    elements.parentNode.removeChild(elements);
+    
+}
 function addTodo(){
     const getValueInput= document.querySelector("input");
-    const inputVAlue=getValueInput.value
-    return inputVAlue;
+    const inputValue=getValueInput.value;    
 
+    const newDivEL=document.createElement("div");
+    newDivEL.setAttribute("id","todo-"+ctr)
+
+    newDivEL.innerHTML="<div>"+inputValue +'</div> <button onclick="deleteTodo('+ ctr +')">delete</button>';
+    const parentEl=document.querySelector(".tododiv");
+    parentEl.appendChild(newDivEL);
+      ctr = ctr +1
+    
 }

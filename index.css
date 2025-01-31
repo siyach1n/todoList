@@ -1,4 +1,31 @@
-.divtodo{
+/* 
+.header{
+    background-color: blue;
+}
+.todo-div{
+    background-color: green;
+}
+[id*="todo-"]{
     display: flex;
+    background-color: red;
+}
+ */
 
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.container{
+   background-color: aqua;
+}
+
+.tododiv{
+    display: flex;
+    justify-content: center;
 }
