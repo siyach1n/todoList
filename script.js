@@ -32,15 +32,32 @@ function deleteTodo(index){
     
 }
 function addTodo(){
-    const getValueInput= document.querySelector("input");
-    const inputValue=getValueInput.value;    
+     //getting input from the text box and named as inputValue
+    const value= document.querySelector("input").value;
+        //create span and button element
+    const spanEl = document.createElement("span");
+    const buttonEl = document.createElement("button")
+        //value to the elements 
+    spanEl.innerHTML= value;
+    buttonEl.innerHTML= "delete"
+        //creating divel and append spanEl then buttonEl
+    const divEl=document.createElement("div");
+    divEl.appendChild(spanEl);
+    divEl.appendChild(buttonEl);
+        //appending divEl to the body
+    document.querySelector(".todolist").appendChild(divEl)
 
-    const newDivEL=document.createElement("div");
-    newDivEL.setAttribute("id","todo-"+ctr)
 
-    newDivEL.innerHTML="<div>"+inputValue +'</div> <button onclick="deleteTodo('+ ctr +')">delete</button>';
-    const parentEl=document.querySelector(".todolist");
-    parentEl.appendChild(newDivEL);
-      ctr = ctr +1
+    // const inputValue=getValueInput.value;    
+
+    //     //creating a div element and add id to it 
+    // const newDivEL=document.createElement("div");
+    // newDivEL.setAttribute("id","todo-"+ctr)
+        
+     
+    // newDivEL.innerHTML="<div>"+inputValue +'</div> <button onclick="deleteTodo('+ ctr +')">delete</button>';
+    // const parentEl=document.querySelector(".todolist");
+    // parentEl.appendChild(newDivEL);
+    //   ctr = ctr +1
     
 }
