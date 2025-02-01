@@ -40,15 +40,21 @@ function addTodo(){
         //value to the elements 
     spanEl.innerHTML= value;
     buttonEl.innerHTML= "delete"
+
+    // buttonEl.onclick=function(){
+    //     deleteTodo('+ctr');
+    // }
         //creating divel and append spanEl then buttonEl
     const divEl=document.createElement("div");
+    divEl.setAttribute("id","todo-"+ctr)
     divEl.appendChild(spanEl);
     divEl.appendChild(buttonEl);
         //appending divEl to the body
     document.querySelector(".todolist").appendChild(divEl)
 
 
-    // const inputValue=getValueInput.value;    
+    ctr++
+        // const inputValue=getValueInput.value;    
 
     //     //creating a div element and add id to it 
     // const newDivEL=document.createElement("div");
