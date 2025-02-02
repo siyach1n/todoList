@@ -15,7 +15,9 @@ body{
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
-    background-color: gray;
+    background-color: #6dc7d1;
+    color: #e2f3f4;
+    font-family: 'Satoshi', sans-serif;
 }
 .header{
     display: flex;
