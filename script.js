@@ -48,6 +48,7 @@ function addTodo(){
     const divEl=document.createElement("div");
     divEl.setAttribute("id","todo-"+ctr)
     divEl.appendChild(spanEl);
+    buttonEl.setAttribute("id","dl-btn")
     divEl.appendChild(buttonEl);
         //appending divEl to the body
     document.querySelector(".todolist").appendChild(divEl)
