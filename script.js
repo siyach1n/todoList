@@ -7,8 +7,10 @@ function addTodoComponent(todos,index){
    const div1 =  document.createElement('div');
    const h1=  document.createElement('h1');
    const todoDelButton = document.createElement('button')
-   todoDelButton.innerHTML="Deletetodo"
-   
+   div1.setAttribute("id","todoListDiv")
+   h1.setAttribute("id","todotext")
+   todoDelButton.setAttribute("id","tododelbutton")
+   todoDelButton.innerHTML="X"
    todoDelButton.setAttribute("onClick","deleteTodo(" + index+ ")");
 
    h1.innerHTML=todos.title
